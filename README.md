@@ -117,3 +117,28 @@ Tudo o que está aqui:
 - não admite adaptação silenciosa.
 
 Qualquer desvio é considerado **não conforme**, ainda que funcione tecnicamente.
+
+---
+
+---
+
+## 9. Política de branches
+
+Este repositório adota a seguinte política:
+
+- `main`  
+  Branch canônica e protegida.  
+  Contém apenas estados consolidados, revisados e publicáveis da arquitetura TRC.
+
+- `work`  
+  Branch de trabalho ativo.  
+  Todo desenvolvimento, ajuste ou extensão **DEVE** ocorrer aqui.
+
+É proibido:
+- trabalhar diretamente em `main`;
+- tratar `work` como fonte canônica;
+- introduzir outros branches sem justificativa arquitetural explícita.
+
+---
+
+
