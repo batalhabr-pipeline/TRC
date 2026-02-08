@@ -120,8 +120,6 @@ Qualquer desvio é considerado **não conforme**, ainda que funcione tecnicament
 
 ---
 
----
-
 ## 9. Política de branches
 
 Este repositório adota a seguinte política:
@@ -138,7 +136,3 @@ Este repositório adota a seguinte política:
 - trabalhar diretamente em `main`;
 - tratar `work` como fonte canônica;
 - introduzir outros branches sem justificativa arquitetural explícita.
-
----
-
-
