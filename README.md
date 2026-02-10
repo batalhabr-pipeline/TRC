@@ -1,5 +1,10 @@
 # TRC — Arquitetura Canônica da Pipeline
 
+> **Status:** Constituição TRC v1.0  
+> **Estado:** Congelada  
+> **Escopo:** Arquitetura canônica da pipeline TRC  
+> **Alterações futuras:** Somente via revisão constitucional explícita
+
 Este repositório define **exclusivamente** a arquitetura canônica da pipeline TRC.
 
 Todo o conteúdo aqui é **normativo**, **auditável por design** e deve ser tratado como **fonte de verdade imutável** para qualquer execução válida da pipeline TRC.
@@ -12,7 +17,7 @@ Nenhuma definição neste repositório é ilustrativa, sugestiva ou interpretati
 
 A pipeline TRC é uma sequência **determinística, fechada e invariável** de execução.
 
-Seu objetivo é **orquestrar etapas técnicas mecânicas**, de forma estritamente controlada, garantindo rastreabilidade total do conteúdo ao longo de todo o fluxo.
+Seu objetivo é **orquestrar etapas técnicas mecânicas**, de forma estritamente controlada, garantindo **rastreabilidade total** do conteúdo ao longo de todo o fluxo.
 
 A pipeline TRC:
 
@@ -127,9 +132,9 @@ Este repositório é **auditável por design**.
 Tudo o que está aqui:
 
 - deve ser aplicado **literalmente**;
-- não admite interpretação;
-- não admite adaptação silenciosa;
-- não admite flexibilização implícita.
+- **não admite interpretação**;
+- **não admite adaptação silenciosa**;
+- **não admite flexibilização implícita**.
 
 Qualquer desvio é considerado **não conforme**, ainda que funcione tecnicamente.
 
