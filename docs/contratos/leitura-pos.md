@@ -36,8 +36,13 @@ São permitidas **apenas** as seguintes transformações:
 - Correção de pontuação
 - Ajuste de concordância verbal e nominal
 - Suavização de transições frasais
-- Eliminação de repetições mecânicas
+- Reorganização pontual de estruturas repetitivas, sem supressão de conteúdo textual
 - Padronização mínima de estilo textual
+
+Nenhuma operação pode resultar em supressão, condensação ou fusão de conteúdo textual.
+
+Todas as operações devem preservar integralmente o conteúdo textual original.
+A equivalência é 1:1 não apenas semântica, mas textual.
 
 Essas operações **não podem** alterar:
 - ideias
