@@ -39,7 +39,9 @@ A pipeline TRC é composta por uma sequência fixa, linear e auditável de etapa
 
 Cada etapa:
 - possui responsabilidade única;
-- consome apenas os artefatos da etapa anterior;
+consome exclusivamente os artefatos definidos em seu próprio contrato;
+- por padrão, recebe como entrada a etapa imediatamente anterior;
+- exceções de múltiplas entradas devem estar explicitamente declaradas na definição da etapa;
 - produz artefatos imutáveis;
 - não interpreta, resume ou cria conteúdo novo.
 
@@ -157,6 +159,15 @@ A ordem das etapas é **canônica e imutável**.
 
 **Entradas**
 - Leitura Pré e Leitura Pós.
+
+**Justificativa arquitetural**
+
+A Nota Filha consome tanto a Leitura Pós quanto a Leitura Pré
+para preservar auditabilidade 1:1 entre evidência técnica (Pré)
+e versão legível final (Pós).
+
+Essa dupla entrada é uma exceção formalmente permitida
+conforme regra geral da Seção 3.
 
 **Saídas**
 - Documento Markdown final, contendo:
