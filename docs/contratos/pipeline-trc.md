@@ -199,3 +199,103 @@ TRC###-ANO - YT - Canal - Titulo.ext
 
 ## 6. Violação de Contrato
 Qualquer script, agente ou modificação que viole este contrato é considerada **defeito crítico de arquitetura**.
+
+---
+
+## 7. Protocolo Operacional e Governança Contratual
+
+### 7.1. Hierarquia Normativa
+
+Este documento possui supremacia normativa sobre todos os contratos individuais de etapas da pipeline TRC.
+
+Em caso de conflito entre:
+
+- o Contrato Canônico da Pipeline; e  
+- qualquer contrato individual de etapa,
+
+prevalece o presente documento.
+
+---
+
+### 7.2. Separação entre Camada Conceitual e Camada Operacional
+
+A pipeline TRC possui duas camadas normativas distintas:
+
+**Camada Conceitual (este documento):**
+- Define princípios imutáveis;
+- Define ordem canônica;
+- Define responsabilidades;
+- Define garantias semânticas e ontológicas.
+
+**Camada Operacional (contratos individuais de etapas):**
+- Define entradas e saídas técnicas específicas;
+- Define formatos de arquivos;
+- Define comportamento mecânico do script correspondente.
+
+Contratos individuais não podem:
+
+- alterar princípios imutáveis;
+- alterar ordem canônica;
+- criar exceções não explicitamente permitidas.
+
+---
+
+### 7.3. Protocolo de Interface entre Etapas
+
+Toda comunicação entre etapas deve obedecer às seguintes regras:
+
+- Cada etapa consome exclusivamente os artefatos definidos como sua entrada contratual.
+- Nenhuma etapa pode inferir ou descobrir artefatos por varredura implícita.
+- Artefatos produzidos são imutáveis.
+- Nenhuma etapa pode renomear artefatos definidos anteriormente.
+- A ordem de execução é linear e obrigatória, salvo exceções formalmente declaradas.
+
+---
+
+### 7.4. Orquestração
+
+A Etapa 0 — Marco Zero é a única entidade autorizada a:
+
+- executar sequencialmente as etapas;
+- garantir a ordem canônica;
+- validar dependências técnicas.
+
+Nenhuma etapa posterior pode:
+
+- chamar diretamente outra etapa;
+- assumir responsabilidade de orquestração.
+
+---
+
+### 7.5. Versionamento e Evolução
+
+Qualquer modificação neste documento exige:
+
+- Incremento explícito de versão;
+- Revisão formal dos contratos individuais;
+- Commit documentado no repositório TRC.
+
+Modificações em contratos individuais que impactem:
+
+- entradas,
+- saídas,
+- nomenclatura,
+- fluxo,
+
+exigem validação de compatibilidade com este contrato.
+
+---
+
+### 7.6. Auditoria e Conformidade
+
+Todo script executável da pipeline deve ser:
+
+- auditável;
+- rastreável;
+- aderente ao contrato correspondente.
+
+Violação de qualquer cláusula desta Seção constitui:
+
+**Defeito crítico de arquitetura.**
+
+---
