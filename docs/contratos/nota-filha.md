@@ -1,5 +1,14 @@
 # Contrato Canônico — Nota Filha (TRC)
 
+- Versão: 1.0.0
+- Compatível com: Pipeline TRC 1.0.0
+
+## Subordinação Normativa
+
+Este contrato é subordinado ao "Contrato Canôni>
+
+Em caso de conflito normativo, prevalece o cont>
+
 ## 1. Finalidade da Nota Filha
 
 A Nota Filha é o artefato final de leitura e estudo da pipeline TRC.

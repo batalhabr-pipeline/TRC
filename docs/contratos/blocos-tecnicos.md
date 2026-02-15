@@ -1,5 +1,14 @@
 # Contrato Canônico — Blocos Técnicos (TRC)
 
+- Versão: 1.0.0
+- Compatível com: Pipeline TRC 1.0.0
+
+## Subordinação Normativa
+
+Este contrato é subordinado ao "Contrato Canônico — Pipeline TRC".
+
+Em caso de conflito normativo, prevalece o contrato canônico da pipeline.
+
 ## 1. Finalidade
 
 Os **Blocos Técnicos** são unidades intermediárias **puramente mecânicas**, criadas a partir da Nota Base com o único objetivo de viabilizar processamento posterior em etapas controladas.

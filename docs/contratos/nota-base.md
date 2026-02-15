@@ -1,5 +1,14 @@
 # Contrato Canônico — Nota Base (TRC)
 
+- Versão: 1.0.0
+- Compatível com: Pipeline TRC 1.0.0
+
+## Subordinação Normativa
+
+Este contrato é subordinado ao "Contrato Canôni>
+
+Em caso de conflito normativo, prevalece o cont>
+
 ## 1. Identidade
 
 A **Nota Base** é o **primeiro artefato em Markdown (.md)** da pipeline TRC.

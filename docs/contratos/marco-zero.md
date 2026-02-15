@@ -1,18 +1,27 @@
 TRC — Contrato do Marco Zero
 
-1. Finalidade
+- Versão: 1.0.0
+- Compatível com: Pipeline TRC 1.0.0
+
+## Subordinação Normativa
+
+Este contrato é subordinado ao "Contrato Canôni>
+
+Em caso de conflito normativo, prevalece o cont>
+
+## 1. Finalidade
 O Marco Zero é o único ponto de entrada da pipeline TRC.
 Sua função é orquestrar a execução da pipeline, garantindo que todas as etapas subsequentes operem sob contratos técnicos claros, auditáveis e imutáveis.
 O Marco Zero não processa conteúdo.
 Ele coordena, valida pré-condições e impõe ordem.
 
-2. Identidade Canônica
+## 2. Identidade Canônica
 Nome do script: trc-marco-zero.sh
 Localização obrigatória: scripts/marco-zero/
 Papel arquitetural: orquestrador único da pipeline TRC
 Nenhum outro script pode assumir funções equivalentes.
 
-3. Responsabilidades
+## 3. Responsabilidades
 O Marco Zero DEVE:
 Ser o único ponto de entrada da pipeline
 Receber uma URL válida do YouTube como argumento obrigatório
@@ -22,7 +31,7 @@ Converter o áudio para o formato canônico da pipeline
 Executar os scripts subsequentes na ordem canônica
 Abortar a pipeline em caso de qualquer erro
 
-4. Proibições Explícitas
+## 4. Proibições Explícitas
 O Marco Zero NÃO PODE, sob nenhuma circunstância:
 Interpretar conteúdo textual
 Resumir, reescrever ou corrigir texto
@@ -33,21 +42,24 @@ Executar parcialmente a pipeline após falha
 Incorporar lógica pertencente a etapas posteriores
 Qualquer violação invalida a execução como não canônica.
 
-5. Entrada
-5.1 Argumento obrigatório
+## 5. Entrada
+
+### 5.1 Argumento obrigatório
 Uma URL válida do YouTube
 A ausência ou invalidez da URL DEVE resultar em falha imediata, sem efeitos colaterais.
 
-6. Dependências Obrigatórias
+## 6. Dependências Obrigatórias
 Antes de qualquer processamento, o Marco Zero DEVE verificar a presença das seguintes ferramentas:
 yt-dlp
 ffmpeg
 A ausência de qualquer dependência DEVE causar aborto imediato da pipeline.
 
-7. Aquisição e Normalização de Áudio
-7.1 Download do áudio
+## 7. Aquisição e Normalização de Áudio
+
+### 7.1 Download do áudio
 O Marco Zero DEVE baixar o áudio da fonte utilizando yt-dlp, preservando o formato original retornado pela ferramenta.
-7.2 Conversão para formato canônico
+
+### 7.2 Conversão para formato canônico
 O áudio DEVE ser convertido para:
 Formato: WAV
 Frequência: 16 kHz
@@ -56,7 +68,7 @@ Codificação: PCM linear (pcm_s16le)
 Este é o contrato técnico fixo da pipeline.
 Nenhuma etapa posterior pode receber áudio em formato diferente.
 
-8. Ordem Canônica de Execução
+## 8. Ordem Canônica de Execução
 O Marco Zero DEVE executar, estritamente nesta ordem, os seguintes scripts:
 trc-nota-bruta.sh
 trc-nota-base.sh
@@ -69,14 +81,14 @@ Pular etapas
 Reordenar chamadas
 Executar etapas condicionalmente
 
-9. Política de Falha
+## 9. Política de Falha
 Qualquer erro em qualquer etapa DEVE causar aborto imediato da pipeline
 Não é permitido continuar a execução após falha
 Não é permitido gerar outputs parciais silenciosos
 O código de saída das etapas DEVE ser respeitado
 Falhar cedo é preferível a corromper a rastreabilidade da pipeline.
 
-10. Escopo Arquitetural
+## 10. Escopo Arquitetural
 O Marco Zero é responsável apenas por:
 Orquestração
 Validação de pré-condições
@@ -86,7 +98,7 @@ Conteúdo textual
 Qualidade semântica
 Interpretação humana ou automatizada
 
-11. Imutabilidade do Contrato
+## 11. Imutabilidade do Contrato
 Este contrato é normativo.
 Qualquer alteração:
 DEVE ser explícita
