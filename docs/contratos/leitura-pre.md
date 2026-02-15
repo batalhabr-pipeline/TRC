@@ -1,5 +1,14 @@
 # Contrato Canônico — Leitura Pré (TRC)
 
+- Versão: 1.0.0
+- Compatível com: Pipeline TRC 1.0.0
+
+## Subordinação Normativa
+
+Este contrato é subordinado ao "Contrato Canôni>
+
+Em caso de conflito normativo, prevalece o cont>
+
 ## 1. Finalidade
 
 A **Leitura Pré** tem como objetivo **reorganizar Blocos Técnicos em parágrafos coesos**, respeitando rigorosamente o conteúdo original, **sem qualquer interpretação, inferência ou enriquecimento semântico**.
